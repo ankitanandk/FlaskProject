@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>View Detail</title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+        <h2>Database Details</h2>
+        <h3>Welcome</h3>
+
+        <div class="ui segment">
+            <p class="ui big header">Your Email ID: {{ item.email }} | Password: {{ item.password }} | Description: {{ item.desciption }} | Email1: {{ item.email1 }} | Email2: {{ item.email2 }} | Email3: {{ item.email3 }} | Email4: {{ item.email4 }} | Email5: {{ item.email5 }} | Document: <img src="{{ item.link }}"></p>
+        </div>
+    {% endblock %}
+</body>
+</html>

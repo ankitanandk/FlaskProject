@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Register Here and Enter Mail ID's you want to send your file to: </title>
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+        <h3>Register Here and Enter Mail ID's you want to send your file to: </h3>
+        <form class="ui form" action="/add" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <label> Email </label>
+                <input type = "text" name = "email" placeholder="email"><br>
+                <label> Password </label>
+                <input type="text" name="password" placeholder="password"><br>
+                <label> Description </label>
+                <input type="text" name="description" placeholder="file description"><br>
+                <label> Email1 </label>
+                <input type="text" name="email1" placeholder="email"><br>
+                <label> Email2 </label>
+                <input type="text" name="email2" placeholder="email"><br>
+                <label> Email3 </label>
+                <input type="text" name="email3" placeholder="email"><br>
+                <label> Email4 </label>
+                <input type="text" name="email4" placeholder="email"><br>
+                <label> Email5 </label>
+                <input type="text" name="email5" placeholder="email"><br>
+                <label> Image File </label>
+                <input type="file" name="file">
+            </div>
+            <button class = "ui blue button" type="submit"> Send mail and Register </button>
+
+        </form>
+
+        <a href="/">Go To Main Page</a>
+    {% endblock %}
+</body>
+</html>

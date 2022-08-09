@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <h3>Main Page</h3>
+        <form class="ui form" action="/search" method="post">
+            <div class="field">
+                <label> Search User </label>
+                <input type = "text" name = "email" placeholder="email"><br>
+            </div>
+
+            <button class = "ui blue button" type="submit"> Submit </button>
+
+        </form>
+    {% endblock %}
+</body>
+</html>
